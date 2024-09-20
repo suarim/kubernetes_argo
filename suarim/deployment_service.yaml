@@ -19,13 +19,7 @@ spec:
         image: suarim/hey-python:v4
         ports:
           - containerPort: 5000
-        volumeMounts:
-        - name: db-connection
-          mountPath: /opt
-      volumes:
-        - name: db-connection
-          configMap:
-            name: suarim-config
+        
 ---
 apiVersion: v1
 kind: Service
